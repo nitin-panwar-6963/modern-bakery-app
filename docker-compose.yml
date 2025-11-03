@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  nginx:
+    build:
+      context: .
+    container_name: modern-fitness-app
+    ports:
+      - "5000:80"
+    restart: always
+
