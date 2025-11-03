@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Indian Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><div class="logo">Indian <span style="color:var(--accent)">Bakery</span></div></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="theme-toggle" id="themeToggle5"><div class="knob"></div></div>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <h2>Contact Us</h2>
+    <div class="contact-grid reveal">
+      <form id="contactForm" class="contact-card">
+        <label>Name<input id="cName" required></label>
+        <label>Email<input id="cEmail" type="email" required></label>
+        <label>Message<textarea id="cMsg" rows="5" required></textarea></label>
+        <div style="display:flex;gap:10px;margin-top:8px">
+          <button class="btn" type="submit">Send</button>
+          <button class="btn ghost" type="reset">Clear</button>
+        </div>
+      </form>
+
+      <div class="contact-card">
+        <h3>Visit Us</h3>
+        <p>Meerut, Uttar Pradesh, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ indianbakery@example.com</p>
+        <iframe title="map" src="https://www.google.com/maps?q=Meerut,India&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">© Indian Bakery</footer>
+  <div id="toast5" class="toast" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

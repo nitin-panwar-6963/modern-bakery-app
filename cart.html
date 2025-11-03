@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — Indian Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><div class="logo">Indian <span style="color:var(--accent)">Bakery</span></div></div>
+    <nav class="nav">
+      <a href="products.html" class="nav-link">Continue shopping</a>
+      <div class="theme-toggle" id="themeToggle4"><div class="knob"></div></div>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <h2>Your Cart</h2>
+    <div id="cartList" class="cart-list reveal"></div>
+
+    <div class="cart-summary reveal">
+      <div class="summary-row"><span>Total</span><strong>₹ <span id="cartTotal">0</span></strong></div>
+      <div class="cart-actions">
+        <button class="btn ghost" onclick="clearCart()">Clear</button>
+        <button class="btn" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">© Indian Bakery</footer>
+  <div id="toast4" class="toast" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

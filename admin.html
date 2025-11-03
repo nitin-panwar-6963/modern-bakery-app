@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Indian Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><div class="logo">Admin — Indian <span style="color:var(--accent)">Bakery</span></div></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <h2>Admin Dashboard (Local)</h2>
+    <div class="admin-grid reveal">
+      <div class="admin-card">
+        <h3>Add / Edit Product</h3>
+        <label>Name<input id="adminName"></label>
+        <label>Price<input id="adminPrice" type="number"></label>
+        <label>Category<select id="adminCat">
+          <option value="cakes">Cakes</option>
+          <option value="sweets">Sweets</option>
+          <option value="snacks">Snacks</option>
+          <option value="breads">Breads</option>
+        </select></label>
+        <label>Image URL<input id="adminImg"></label>
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <button class="btn" onclick="adminAdd()">Add</button>
+          <button class="btn ghost" onclick="adminReset()">Reset</button>
+        </div>
+      </div>
+
+      <div class="admin-card">
+        <h3>Products</h3>
+        <div id="adminList"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">© Indian Bakery</footer>
+  <div id="toast6" class="toast" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

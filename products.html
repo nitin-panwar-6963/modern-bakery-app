@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Indian Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">Indian <span style="color:var(--accent)">Bakery</span></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link active">Products</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <div class="theme-toggle" id="themeToggle2"><div class="knob"></div></div>
+      <a href="cart.html" class="cart-link">🛒 <span id="cartCount2">0</span></a>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <div class="products-top reveal" style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px">
+      <h2>Products</h2>
+      <div style="display:flex;gap:12px;align-items:center">
+        <input id="search" placeholder="Search products..." style="padding:10px;border-radius:8px;border:1px solid #ddd">
+        <select id="category" style="padding:10px;border-radius:8px;border:1px solid #ddd">
+          <option value="all">All categories</option>
+          <option value="cakes">Cakes</option>
+          <option value="sweets">Sweets</option>
+          <option value="snacks">Snacks</option>
+          <option value="breads">Breads</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productGrid" class="grid reveal"></div>
+  </main>
+
+  <footer class="site-footer">© <span id="year2"></span> Indian Bakery</footer>
+  <div id="toast2" class="toast" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
